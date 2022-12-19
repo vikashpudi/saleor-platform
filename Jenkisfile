@@ -1,5 +1,5 @@
 pipeline { 
-agent{label'DOTNET-TERRAFORM'}
+agent{label'master'}
 
 stages {
 	stage('git cloneing') {
