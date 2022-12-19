@@ -1,0 +1,25 @@
+pipeline { 
+agent{label'DOTNET-TERRAFORM'}
+
+stages {
+	stage('git cloneing') {
+		steps {
+		git url: 'https://github.com/vikashpudi/saleor-platform.git' , branch: 'main'
+		 
+		}
+	    }
+	 
+    }
+    stage('image building') {
+		steps {
+		 sh'''
+         ls
+         pwd
+
+         '''
+		 
+		}
+	    }
+	 
+    }
+}
